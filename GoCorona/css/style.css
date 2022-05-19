@@ -38,14 +38,13 @@ body {
 	line-height: 1;
 }
 
-/*--------------------*/
-
 body {
 	font-family: Rubik;
 	font-size: 12px;
 	color: #616161;
 }
 
+/* --------------------- */
 .wrapper {
 	overflow: hidden;
 	display: flex;
@@ -53,16 +52,24 @@ body {
 	min-height: 100%;
 }
 
+/* -------------------- */
+
 .main {
 	flex: 1 1 auto;
 }
 
 [class*="__container"] {
 	max-width: 1057px;
-	margin: 0 auto;
+	margin: 0px auto;
 }
 
-.header {}
+.header {
+	position: absolute;
+	width: 100%;
+	top: 0px;
+	left: 0px;
+	z-index: 50;
+}
 
 .header__container {
 	display: flex;
@@ -73,13 +80,18 @@ body {
 .header__logo {}
 
 .header__menu {
-	flex: 1 1;
+	flex: 1 1 auto;
+}
+
+.header__button {
+	flex: 0 0 252px;
+	display: flex;
+	justify-content: flex-end;
 }
 
 .menu {
 	display: flex;
 	justify-content: flex-end;
-	padding: 0px 40px 0px 0px;
 }
 
 .menu__list {
@@ -100,12 +112,6 @@ body {
 	letter-spacing: 1px;
 }
 
-.header__button {
-	flex: 0 0 252px;
-	display: flex;
-	justify-content: flex-end;
-}
-
 .button {
 	display: inline-block;
 	font-family: Raleway;
@@ -122,13 +128,13 @@ body {
 }
 
 .button:hover {
-	background-color: #ec777f;
+	background-color: #f0868d;
 }
 
 .button_blue {
 	background-color: #4285F4;
 }
 
-.button_blue:hover {
-	background-color: #578ee7;
+.button:hover {
+	background-color: #80abf0;
 }
